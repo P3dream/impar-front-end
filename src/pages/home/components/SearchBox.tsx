@@ -7,6 +7,7 @@ interface SearchBoxProps {
 
 const SearchBox: React.FC<SearchBoxProps> = ({
   placeholder = "Digite aqui sua busca...",
+  
 }) => {
   return (
     <div className="bg-white flex items-center rounded-lg shadow-md opacity-100 P-8">

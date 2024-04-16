@@ -1,5 +1,4 @@
-import React from "react";
-import { useDeleteCard, usePostCard } from "../../../api/cards";
+import { useDeleteCard } from "../../../api/cards";
 
 type Params = {
   onClose: () => void;
@@ -23,7 +22,7 @@ const DeleteCardModal = ({ onClose, id }: Params) => {
           <button className="grow" onClick={deleteCard}>
             Excluir
           </button>
-          <button className="grow" onClick={onClose}>
+          <button className="grow" onClick={onClose} >
             Cancelar
           </button>
         </div>

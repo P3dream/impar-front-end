@@ -2,12 +2,12 @@ import { CardData } from "../@types/cardData";
 import api from "../utils/axios";
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 
-export const useGetCards = () => {
+export const useGetCards = (searchString? : String) => {
   return useQuery({
     queryKey: ["cards"],
     queryFn: async () => {
-      const result = await api.get<CardData[]>("/Card");
-
+      const result = await api.get<CardData[]>(`/Card?searchString=${searchString}`);
+      
       return result.data;
     },
   });
@@ -56,7 +56,7 @@ export const usePatchCard = (id: number) => {
         formData.append("image", card.image);
       }
 
-      await api.patch(`/Card/${id}`, formData, {
+      await api.put(`/Card/${id}`, formData, {
         headers: {
           "Content-Type": "multipart/form-data",
         },
