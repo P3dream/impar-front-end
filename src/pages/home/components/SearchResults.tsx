@@ -27,24 +27,14 @@ const SearchResults = ({ openModal }: Params) => {
     <section className="container mx-auto mt-8">
       <div className="flex justify-between items-center mb-4">
         <h2 className="text-2xl font-bold">Resultados de busca</h2>
-        <MainButton onClick={openModal} text="Criar Card" />
-      </div>
-      {isLoading ? (
-        <div>Carregando...</div>
-      ) : (
-        <div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {cards?.map((car, index) => (
-              <CarCard key={index} carData={car} />
-            ))}
-          </div>
-          <div className="flex justify-between mt-4">
+        <div className="flex">
+          <div className="flex"> 
             <button
               onClick={prevPage}
               disabled={currentPage === 1}
               className={`${
                 currentPage === 1 ? "opacity-50 cursor-not-allowed" : ""
-              } bg-gray-200 hover:bg-gray-300 py-2 px-4 rounded`}
+              } bg-gray-200 hover:bg-gray-300 py-2 px-4 rounded ml-2`}
             >
               Anterior
             </button>
@@ -55,11 +45,21 @@ const SearchResults = ({ openModal }: Params) => {
                 !cards || cards.length < 9
                   ? "opacity-50 cursor-not-allowed"
                   : ""
-              } bg-gray-200 hover:bg-gray-300 py-2 px-4 rounded`}
+              } bg-gray-200 hover:bg-gray-300 py-2 px-4 rounded ml-2 mr-2`}
             >
               Próxima
             </button>
           </div>
+          <MainButton onClick={openModal} text="Criar Card" />
+        </div>
+      </div>
+      {isLoading ? (
+        <div>Carregando...</div>
+      ) : (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          {cards?.map((car, index) => (
+            <CarCard key={index} carData={car} />
+          ))}
         </div>
       )}
     </section>

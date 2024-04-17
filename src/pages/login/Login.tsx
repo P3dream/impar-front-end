@@ -58,6 +58,7 @@ const Login = () => {
             <div>
                 <label className="text-gray-700 font-semibold">Password</label>
                 <Input
+                type="password"
                 control={control}
                 name="password"
                 placeholder="Digite sua senha"
@@ -72,7 +73,7 @@ const Login = () => {
             </div>
           </form>
         </div>
-        {error && <ErrorSnackbar message="Erro ao logar" onClose={handleCloseError} />}
+        {error && <ErrorSnackbar message="Credenciais inválidas" onClose={handleCloseError} />}
       </div>
     );
   }
