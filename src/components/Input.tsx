@@ -1,7 +1,7 @@
 import { Control, useController } from "react-hook-form";
 
 interface Params extends React.InputHTMLAttributes<HTMLInputElement> {
-  label: string;
+  label?: string;
   name: string;
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   control: Control<any>;

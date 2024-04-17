@@ -62,10 +62,10 @@ const UpdateCardModal: React.FC<CreateCardModalProps> = ({
           <Input
             control={control}
             name="cardName"
-            label="DIGITE UM NOME PARA O CARD:"
-            placeholder="Digite o Título"
+            label="Nome:"
+            placeholder="Digite o nome do carro"
           />
-          <Input control={control} name="status" label="Status:" />
+          <Input control={control} name="status" label="Status:" placeholder="Digite o status do carro" />
           <InputFile
             control={control}
             name="status"

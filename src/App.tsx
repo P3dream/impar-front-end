@@ -1,11 +1,8 @@
-import { HomePage } from "./pages/home/home";
-import { AppProvider } from "./providers/appProvider";
+import Login from "./pages/login/Login";
 
 export const App = () => {
   return (
-    <AppProvider>
-      <HomePage />
-    </AppProvider>
+    <Login />
   );
 };
 

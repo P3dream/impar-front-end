@@ -6,9 +6,21 @@ const api = axios.create({
   timeout: 10000,
   headers: {
     "Content-Type": "application/json",
-    Authorization:
-      "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYmYiOjE3MTMyMjE3OTUsImV4cCI6MTcxMzMwODE5NSwiaWF0IjoxNzEzMjIxNzk1fQ.2dwDrOfjDUiND_hVnFVBKFWbr1vypcLL3CFtz5Drb4c",
   },
 });
+
+api.interceptors.request.use(
+  (config) => {
+    const token = localStorage.getItem("impar-token");
+    if (token) {
+      config.headers.Authorization = `Bearer ${token}`;
+    }
+    return config;
+  },
+  (error) => {
+    return Promise.reject(error);
+  }
+);
+
 
 export default api;
