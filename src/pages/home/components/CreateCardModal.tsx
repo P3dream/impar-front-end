@@ -60,7 +60,7 @@ const CreateCardModal: React.FC<CreateCardModalProps> = ({ onClose }) => {
             name="image"
             label="Imagem:"
             accept="image/*"
-            className="bg-orange-500 hover:bg-orange-600 text-white py-2 px-4 rounded-lg"
+            
           />
           <div className="w-full h-[1px] bg-gray-400 mt-2 mb-2" />
           <MainButton type="submit" text="Criar Card" />
