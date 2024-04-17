@@ -2,12 +2,11 @@ import { CardData } from "../@types/cardData";
 import api from "../utils/axios";
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 
-export const useGetCards = (searchString? : String) => {
+export const useGetCards = (page: number, searchString? : String) => {
   return useQuery({
     queryKey: ["cards"],
     queryFn: async () => {
-      const result = await api.get<CardData[]>(`/Card?searchString=${searchString}`);
-      
+      const result = await api.get<CardData[]>(`/Card?Page=${page}&&searchString=${searchString}`);
       return result.data;
     },
   });

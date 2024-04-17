@@ -7,7 +7,6 @@ interface SearchBoxProps {
 
 const SearchBox: React.FC<SearchBoxProps> = ({
   placeholder = "Digite aqui sua busca...",
-  // onSearch,
 }) => {
   const [input,setInput] = useState("");
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -15,7 +14,6 @@ const SearchBox: React.FC<SearchBoxProps> = ({
   };
 
   const handleSearch = () => {
-    // onSearch(input);
   };
 
   return (

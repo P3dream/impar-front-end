@@ -34,7 +34,7 @@ const CreateCardModal: React.FC<CreateCardModalProps> = ({ onClose }) => {
   return (
     <div className="absolute right-0 top-0 h-full w-full bg-white bg-opacity-70 ">
       <div className="h-full w-[400px] ml-auto p-5 rounded-sm bg-white border-l border-2 ">
-        <span className="close" onClick={onClose}>
+        <span className="close" onClick={onClose} style={{ cursor: "pointer" }}>
           &times;
         </span>
         <h2 className="font-bold">Criar Card</h2>
@@ -60,6 +60,7 @@ const CreateCardModal: React.FC<CreateCardModalProps> = ({ onClose }) => {
             name="image"
             label="Imagem:"
             accept="image/*"
+            className="bg-orange-500 hover:bg-orange-600 text-white py-2 px-4 rounded-lg"
           />
           <div className="w-full h-[1px] bg-gray-400 mt-2 mb-2" />
           <MainButton type="submit" text="Criar Card" />
