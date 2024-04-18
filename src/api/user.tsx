@@ -14,3 +14,16 @@ export const usePostLogin = () => {
       }
     });
 };
+
+export const usePostRegister = () => {  
+  return useMutation({
+    mutationKey: ["registerUsers"],
+    mutationFn: async (user: User) => {
+      const result = await api.post("/User/register",{
+        "Username": user.username,
+        "Password": user.password
+      });
+      return {jwt: result.data.username, response:result.status}
+    }
+  });
+};

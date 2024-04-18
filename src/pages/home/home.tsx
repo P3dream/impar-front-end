@@ -1,4 +1,3 @@
-// App.tsx
 import React, { useState } from "react";
 import Header from "./components/Header";
 import ImageBanner from "./components/ImageBanner";
@@ -7,6 +6,7 @@ import CreateCardModal from "./components/CreateCardModal";
 
 export const HomePage: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [searchTerm, setSearchTerm] = useState("");
 
   const openModal = () => {
     setIsModalOpen(true);
@@ -16,15 +16,21 @@ export const HomePage: React.FC = () => {
     setIsModalOpen(false);
   };
 
+  const handleSearch = (term: string) => {
+    setSearchTerm(term);
+  };
+
   return (
     <div>
       <div>
         <Header />
-        <ImageBanner />
-        <SearchResults openModal={openModal} />
+        <ImageBanner handleSearch={handleSearch} />
+        <SearchResults openModal={openModal} searchTerm={searchTerm} />
       </div>
 
       {isModalOpen && <CreateCardModal onClose={closeModal} />}
     </div>
   );
 };
+
+export default HomePage;

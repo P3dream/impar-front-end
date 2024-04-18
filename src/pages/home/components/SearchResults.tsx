@@ -1,19 +1,17 @@
-import { useState, useEffect } from "react";
+  import React, { useState, useEffect } from "react";
 import CarCard from "./carCard";
 import { useGetCards } from "../../../api/cards";
 import { MainButton } from "../../../components/MainButton";
 
-type Params = {
-  openModal: () => void;
-};
-
-const SearchResults = ({ openModal }: Params) => {
+const SearchResults: React.FC<{ openModal: () => void; searchTerm: string }> = ({ openModal, searchTerm }) => {
   const [currentPage, setCurrentPage] = useState(1);
-  const { data: cards, isLoading, refetch } = useGetCards(currentPage);
+  const { data: cards, isLoading, refetch } = useGetCards(currentPage, searchTerm);
 
   useEffect(() => {
+    console.log("Search term:", searchTerm);
+    console.log("Cards:", cards);
     refetch();
-  }, [currentPage, refetch]);
+  }, [currentPage, refetch, searchTerm]); // Adicionado 'searchTerm' como dependência
 
   const nextPage = () => {
     setCurrentPage((prevPage) => prevPage + 1);

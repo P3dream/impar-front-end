@@ -68,7 +68,7 @@ const UpdateCardModal: React.FC<CreateCardModalProps> = ({
           <Input control={control} name="status" label="Status:" placeholder="Digite o status do carro" />
           <InputFile
             control={control}
-            name="status"
+            name="image"
             label="Imagem:"
             accept="image/*"
             
