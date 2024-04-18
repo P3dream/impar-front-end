@@ -32,4 +32,4 @@ Após executar o comando `npm run dev`, você receberá o endereço `localhost:{
 
 ## Contato
 
-Se tiver dúvidas, sugestões ou comentários, entre em contato através do email [pedropizzi23@Hotmail.com]
+Se tiver dúvidas, sugestões ou comentários, entre em contato através do email pedropizzi23@Hotmail.com
