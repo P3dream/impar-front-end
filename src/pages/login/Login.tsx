@@ -8,8 +8,8 @@ import { useNavigate } from "react-router-dom";
 import ErrorSnackbar from "../../components/SnackBar";
 
 const schema = z.object({
-  username: z.string().min(1,"Campo obrigatório"),
-  password: z.string().min(1,"Campo obrigatório")
+  username: z.string().min(1,"O campo Username é obrigatório"),
+  password: z.string().min(1,"O campo Password é obrigatório")
 });
 
 type Schema = z.infer<typeof schema>;

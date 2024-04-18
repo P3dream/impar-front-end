@@ -14,8 +14,8 @@ interface CreateCardModalProps {
 }
 
 const schema = z.object({
-  cardName: z.string().min(5, "Pelo menos 5 caracterres"),
-  status: z.string(),
+  cardName: z.string().min(5, "Pelo menos 5 caracteres"),
+  status: z.string().min(5, "Pelo menos 5 caracteres"),
   image: z
     .instanceof(FileList)
     .transform((fileList) => {
