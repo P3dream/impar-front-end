@@ -1,6 +1,6 @@
 # Nome do Projeto
 
-Breve descrição do projeto aqui.
+Front-end para o teste técnico da empresa ímpar.
 
 ## Funcionalidades
 
