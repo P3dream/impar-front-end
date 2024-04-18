@@ -1,8 +1,6 @@
 # Projeto Front-end usando React.js
 
-Front-end para o teste técnico da empresa ímpar.
-
-## Funcionalidades
+Este projeto é um front-end desenvolvido em React.js e oferece as seguintes funcionalidades:
 
 - Componentes Reutilizáveis:
   - Input
