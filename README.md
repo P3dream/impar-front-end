@@ -1,30 +1,35 @@
-# React + TypeScript + Vite
+# Projeto Front-end impar
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Projeto do front-end para o teste técnico, da empresa Ímpar.
 
-Currently, two official plugins are available:
+## Instalação
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Para baixar e executar o projeto localmente, siga estas etapas:
 
-## Expanding the ESLint configuration
+1. Abra o terminal como administrador:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+```bash
+cd <Diretório onde deseja baixar o projeto>
+git init
+git clone https://github.com/P3dream/impar-front-end
+cd impar-front-end
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+2. Certifique-se de ter o Node.js instalado. Se não tiver, você pode baixá-lo [aqui](https://nodejs.org/).
+
+3. Instale as dependências do projeto:
+
+```bash
+npm install
+```
+4. Inicie o servidor de desenvolvimento:
+
+```bash
+npm run dev
+```
+
+Após executar o comando `npm run dev`, você receberá o endereço `localhost:{porta}` no console, onde a aplicação está rodando.
+
+## Contato
+
+Se tiver dúvidas, sugestões ou comentários, entre em contato através do email [pedropizzi23@Hotmail.com]
