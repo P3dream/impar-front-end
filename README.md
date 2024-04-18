@@ -21,7 +21,6 @@ Front-end para o teste técnico da empresa ímpar.
   - Utilização do React Hook Form para validação
   - Validação dos campos do formulário de login e registro, com mensagens de erro personalizadas
 - Interface de Usuário:
-  - Desenvolvimento de uma interface responsiva e atraente
   - Uso de Tailwind CSS para estilização e design
   - Implementação de modais para operações de criação, edição e exclusão de cards
   - Exibição de resultados de busca com paginação
@@ -31,9 +30,6 @@ Front-end para o teste técnico da empresa ímpar.
 - Integração com APIs Externas:
   - Integração com API back-end para operações CRUD em cards
   - Funcionalidades de busca, criação, atualização e exclusão de cards
-- Feedback ao Usuário:
-  - Exibição de mensagens de erro em caso de falha na autenticação ou operações com a API
-  - Feedback visual através de modais e snackbars
 - Documentação e Organização:
   - Organização do código em módulos e componentes reutilizáveis
   - Documentação interna através de comentários e nomenclaturas claras
