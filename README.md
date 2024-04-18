@@ -1,12 +1,46 @@
-# Projeto Front-end impar
+# Nome do Projeto
 
-Projeto do front-end para o teste técnico, da empresa Ímpar.
+Breve descrição do projeto aqui.
 
-## Instalação
+## Funcionalidades
 
-Para baixar e executar o projeto localmente, siga estas etapas:
+- Componentes Reutilizáveis:
+  - Input
+  - InputFile
+  - MainButton
+  - ErrorSnackbar
+- Autenticação:
+  - Páginas de login e registro
+  - Utilização de JWT para autenticação
+  - Armazenamento do token no localStorage
+  - Interceptação de requisições para incluir o token JWT nos cabeçalhos de autorização
+- Interatividade com a API:
+  - Utilização do React Query para consultas, mutações e gerenciamento de estado
+  - Hooks personalizados para uso da API: useGetCards, usePostCard, usePatchCard, useDeleteCard, usePostLogin, usePostRegister
+- Validação de Formulários:
+  - Utilização do React Hook Form para validação
+  - Validação dos campos do formulário de login e registro, com mensagens de erro personalizadas
+- Interface de Usuário:
+  - Desenvolvimento de uma interface responsiva e atraente
+  - Uso de Tailwind CSS para estilização e design
+  - Implementação de modais para operações de criação, edição e exclusão de cards
+  - Exibição de resultados de busca com paginação
+- Rotas e Navegação:
+  - Utilização do React Router para gerenciamento de rotas
+  - Definição de rotas para páginas de login, registro e página inicial
+- Integração com APIs Externas:
+  - Integração com API back-end para operações CRUD em cards
+  - Funcionalidades de busca, criação, atualização e exclusão de cards
+- Feedback ao Usuário:
+  - Exibição de mensagens de erro em caso de falha na autenticação ou operações com a API
+  - Feedback visual através de modais e snackbars
+- Documentação e Organização:
+  - Organização do código em módulos e componentes reutilizáveis
+  - Documentação interna através de comentários e nomenclaturas claras
 
-1. Abra o terminal como administrador:
+## Configuração do Ambiente de Desenvolvimento
+
+1. Clone este repositório:
 
 ```bash
 cd <Diretório onde deseja baixar o projeto>
