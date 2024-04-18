@@ -1,4 +1,4 @@
-# Nome do Projeto
+# Projeto Front-end usando React.js
 
 Front-end para o teste técnico da empresa ímpar.
 
