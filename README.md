@@ -28,7 +28,7 @@ npm install
 npm run dev
 ```
 
-Após executar o comando `npm run dev`, você receberá o endereço `localhost:{porta}` no console, onde a aplicação está rodando.
+Após executar o comando `npm run dev`, você receberá o endereço `http://localhost:{porta}` no console, onde a aplicação está rodando.
 
 ## Contato
 
